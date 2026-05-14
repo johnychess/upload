@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg-main { fill: #005f6b; }
+      .stripe1 { fill: #001a1e; }
+      .stripe2 { fill: #002830; }
+      .stripe3 { fill: #003540; }
+      .stripe4 { fill: #004350; }
+      .stripe5 { fill: #005060; }
+      .tagline { fill: #faf7f5; font-family: Inter-Regular, Inter; font-size: 18px; }
+      .headline { font-family: Inter-Bold, Inter; font-weight: 700; font-size: 60px; }
+      .hl-white { fill: #ffffff; }
+      .hl-teal { fill: #0096a6; }
+      .sub { fill: #faf7f5; font-family: Inter-Regular, Inter; font-size: 36px; }
+
+      /* Browser window */
+      .browser-card { fill: #0c0c14; stroke: #1a2a2d; stroke-width: 1.5px; }
+      .browser-bar { fill: #1e1e24; }
+      .browser-dot-red { fill: #ff5f56; }
+      .browser-dot-yellow { fill: #ffbd2e; }
+      .browser-dot-green { fill: #27c93f; }
+      .browser-url { fill: #888888; font-family: 'Courier New', Courier, monospace; font-size: 10px; }
+
+      /* Product cards */
+      .product-card { fill: #1e1e24; stroke: #2a3a3d; stroke-width: 1px; }
+      .product-card-highlight { fill: #1e1e24; stroke: #0096a6; stroke-width: 2.5px; }
+      .product-img { fill: #2a3a3d; }
+      .product-img-highlight { fill: #003540; }
+      .product-title { fill: #faf7f5; font-family: Inter-SemiBold, Inter; font-weight: 600; font-size: 10px; }
+      .product-price { fill: #0096a6; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 11px; }
+
+      /* Arrow */
+      .arrow-teal { stroke: #0096a6; stroke-width: 2.5px; fill: none; }
+
+      /* Event card */
+      .event-card { fill: #0c0c14; stroke: #1a2a2d; stroke-width: 1.5px; }
+      .event-header { fill: #1e1e24; }
+      .event-title { fill: #faf7f5; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 12px; }
+      .event-badge-fill { fill: #0096a6; }
+      .event-badge-text { fill: #001a1e; font-family: Inter-Bold, Inter; font-weight: 800; font-size: 9px; letter-spacing: 1.5px; }
+
+      .field-name { fill: #0096a6; font-family: 'Courier New', Courier, monospace; font-size: 11px; }
+      .field-value { fill: #faf7f5; font-family: 'Courier New', Courier, monospace; font-size: 11px; }
+      .field-dim { fill: #888888; font-family: 'Courier New', Courier, monospace; font-size: 10px; font-style: italic; }
+    </style>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0096a6"/>
+    </marker>
+  </defs>
+
+  <!-- Background + stripes -->
+  <g>
+    <rect class="bg-main" x="0" y="0" width="1200" height="630"/>
+    <rect class="stripe1" x="0" y="0" width="150" height="630"/>
+    <rect class="stripe2" x="149.15" y="0" width="150" height="630"/>
+    <rect class="stripe3" x="299.15" y="0" width="150" height="630"/>
+    <rect class="stripe4" x="449.15" y="0" width="150" height="630"/>
+    <rect class="stripe5" x="599.15" y="0" width="150" height="630"/>
+  </g>
+
+  <!-- Tagline -->
+  <text class="tagline" transform="translate(72.53 71.11)">
+    <tspan x="0" y="0">ATTRIBUTION / BLOOMREACH</tspan>
+  </text>
+
+  <!-- Headline: "Recommendation / click tracking. / Sixteen fields." (teal on line 3) -->
+  <text class="headline" transform="translate(72.53 178.65)">
+    <tspan class="hl-white"><tspan x="0" y="0">Recommendation</tspan></tspan>
+    <tspan class="hl-white"><tspan x="0" y="72">click tracking.</tspan></tspan>
+    <tspan class="hl-teal"><tspan x="0" y="144">Sixteen fields.</tspan></tspan>
+  </text>
+
+  <!-- Subheadline -->
+  <text class="sub" transform="translate(72.53 561.64)">
+    <tspan x="0" y="0">No GTM. No dataLayer.</tspan>
+  </text>
+
+  <!-- Right-side diagram -->
+  <g>
+    <!-- TOP: Browser window with horizontal product slider -->
+    <rect class="browser-card" x="770" y="95" width="380" height="180" rx="10" ry="10"/>
+    <rect class="browser-bar" x="770" y="95" width="380" height="26" rx="10" ry="10"/>
+    <rect class="browser-bar" x="770" y="113" width="380" height="8"/>
+    <circle class="browser-dot-red" cx="787" cy="108" r="4.5"/>
+    <circle class="browser-dot-yellow" cx="802" cy="108" r="4.5"/>
+    <circle class="browser-dot-green" cx="817" cy="108" r="4.5"/>
+    <text class="browser-url" text-anchor="middle" transform="translate(960 113)"><tspan x="0" y="0">hotels.example.com/dubai-marina</tspan></text>
+
+    <!-- Product slider (4 cards, middle one highlighted) -->
+    <!-- Card 1 -->
+    <rect class="product-card" x="785" y="138" width="80" height="125" rx="6" ry="6"/>
+    <rect class="product-img" x="790" y="143" width="70" height="62" rx="3" ry="3"/>
+    <text class="product-title" transform="translate(790 222)"><tspan x="0" y="0">Wellness Suite</tspan></text>
+    <text class="product-price" transform="translate(790 240)"><tspan x="0" y="0">€199</tspan></text>
+
+    <!-- Card 2 (highlighted, teal stroke) -->
+    <rect class="product-card-highlight" x="875" y="138" width="80" height="125" rx="6" ry="6"/>
+    <rect class="product-img-highlight" x="880" y="143" width="70" height="62" rx="3" ry="3"/>
+    <text class="product-title" transform="translate(880 222)"><tspan x="0" y="0">Penthouse</tspan></text>
+    <text class="product-price" transform="translate(880 240)"><tspan x="0" y="0">€399</tspan></text>
+
+    <!-- Card 3 -->
+    <rect class="product-card" x="965" y="138" width="80" height="125" rx="6" ry="6"/>
+    <rect class="product-img" x="970" y="143" width="70" height="62" rx="3" ry="3"/>
+    <text class="product-title" transform="translate(970 222)"><tspan x="0" y="0">Sea View</tspan></text>
+    <text class="product-price" transform="translate(970 240)"><tspan x="0" y="0">€259</tspan></text>
+
+    <!-- Card 4 -->
+    <rect class="product-card" x="1055" y="138" width="80" height="125" rx="6" ry="6"/>
+    <rect class="product-img" x="1060" y="143" width="70" height="62" rx="3" ry="3"/>
+    <text class="product-title" transform="translate(1060 222)"><tspan x="0" y="0">Garden Room</tspan></text>
+    <text class="product-price" transform="translate(1060 240)"><tspan x="0" y="0">€149</tspan></text>
+
+    <!-- Click cursor on Card 2 (click point at top-left of cursor shape) -->
+    <g transform="translate(920 195)">
+      <path d="M0 0 L0 17 L4.5 13.5 L8.5 20 L11 18.5 L7 12.5 L13 12.5 Z" fill="#ffffff" stroke="#0c0c14" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Teal arrow from middle card down to event card -->
+    <line x1="915" y1="275" x2="915.0" y2="314.0" stroke="#0096a6" stroke-width="2.5" fill="none" stroke-linecap="round"/><polygon points="910.0,311.0 915.0,320.0 920.0,311.0" fill="#0096a6"/>
+
+    <!-- BOTTOM: Event card with field list -->
+    <rect class="event-card" x="770" y="330" width="380" height="200" rx="10" ry="10"/>
+    <rect class="event-header" x="770" y="330" width="380" height="28" rx="10" ry="10"/>
+    <rect class="event-header" x="770" y="348" width="380" height="10"/>
+    <text class="event-title" transform="translate(785 349)"><tspan x="0" y="0">recommendation · action: click</tspan></text>
+
+    <!-- 16 FIELDS badge in header -->
+    <rect class="event-badge-fill" x="1080" y="338" width="60" height="14" rx="3" ry="3"/>
+    <text class="event-badge-text" text-anchor="middle" x="1110" y="348"><tspan x="1110" y="348">16 FIELDS</tspan></text>
+
+    <!-- Field rows: 8 visible + footer -->
+    <text class="field-name" transform="translate(785 376)"><tspan x="0" y="0">action</tspan></text>
+    <text class="field-value" transform="translate(935 376)"><tspan x="0" y="0">click</tspan></text>
+
+    <text class="field-name" transform="translate(785 393)"><tspan x="0" y="0">item_id</tspan></text>
+    <text class="field-value" transform="translate(935 393)"><tspan x="0" y="0">DXB_PENTHOUSE_SUITE</tspan></text>
+
+    <text class="field-name" transform="translate(785 410)"><tspan x="0" y="0">property_code</tspan></text>
+    <text class="field-value" transform="translate(935 410)"><tspan x="0" y="0">DXB</tspan></text>
+
+    <text class="field-name" transform="translate(785 427)"><tspan x="0" y="0">price</tspan></text>
+    <text class="field-value" transform="translate(935 427)"><tspan x="0" y="0">399.00</tspan></text>
+
+    <text class="field-name" transform="translate(785 444)"><tspan x="0" y="0">currency</tspan></text>
+    <text class="field-value" transform="translate(935 444)"><tspan x="0" y="0">EUR</tspan></text>
+
+    <text class="field-name" transform="translate(785 461)"><tspan x="0" y="0">recommendation_id</tspan></text>
+    <text class="field-value" transform="translate(935 461)"><tspan x="0" y="0">abc1234567890def</tspan></text>
+
+    <text class="field-name" transform="translate(785 478)"><tspan x="0" y="0">weblayer_name</tspan></text>
+    <text class="field-value" transform="translate(935 478)"><tspan x="0" y="0">A · room slider v1</tspan></text>
+
+    <text class="field-name" transform="translate(785 495)"><tspan x="0" y="0">position</tspan></text>
+    <text class="field-value" transform="translate(935 495)"><tspan x="0" y="0">2</tspan></text>
+
+    <!-- Dim footer indicating remaining fields -->
+    <text class="field-dim" transform="translate(785 516)"><tspan x="0" y="0">+ 8 more (link_type, total_items, placement_*, …)</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg-main { fill: #005f6b; }
+      .stripe1 { fill: #001a1e; }
+      .stripe2 { fill: #002830; }
+      .stripe3 { fill: #003540; }
+      .stripe4 { fill: #004350; }
+      .stripe5 { fill: #005060; }
+      .tagline { fill: #faf7f5; font-family: Inter-Regular, Inter; font-size: 18px; }
+      .headline { font-family: Inter-Bold, Inter; font-weight: 700; font-size: 60px; }
+      .hl-white { fill: #ffffff; }
+      .hl-teal { fill: #0096a6; }
+      .sub { fill: #faf7f5; font-family: Inter-Regular, Inter; font-size: 36px; }
+
+      /* Banner mockup */
+      .banner-card { fill: #0c0c14; stroke: #1a2a2d; stroke-width: 1.5px; }
+      .banner-title { fill: #faf7f5; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 16px; }
+      .banner-body { fill: #888888; font-family: Inter-Regular, Inter; font-size: 12px; }
+      .cat-label { fill: #faf7f5; font-family: Inter-Regular, Inter; font-size: 12px; }
+      .cat-always { fill: #0096a6; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 11px; }
+
+      .btn-reject-fill { fill: #0c0c14; stroke: #faf7f5; stroke-width: 1.5px; }
+      .btn-accept-fill { fill: #0096a6; }
+      .btn-label-white { fill: #faf7f5; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 13px; }
+      .btn-label-dark  { fill: #0c0c14; font-family: Inter-Bold, Inter; font-weight: 700; font-size: 13px; }
+
+      /* Warning arrow + callout */
+      .arrow-pink { stroke: #e673ac; stroke-width: 2.5px; fill: none; }
+
+      /* Code snippet */
+      .code-card { fill: #0c0c14; stroke: #1a2a2d; stroke-width: 1.5px; }
+      .code-header-bar { fill: #1e1e24; }
+      .code-dot-red { fill: #ff5f56; }
+      .code-dot-yellow { fill: #ffbd2e; }
+      .code-dot-green { fill: #27c93f; }
+      .code-filename { fill: #888888; font-family: 'Courier New', Courier, monospace; font-size: 11px; }
+
+      .code-txt  { fill: #faf7f5; font-family: 'Courier New', Courier, monospace; font-size: 13px; }
+      .code-key  { fill: #0096a6; font-family: 'Courier New', Courier, monospace; font-size: 13px; }
+      .code-bad  { fill: #e673ac; font-family: 'Courier New', Courier, monospace; font-size: 13px; font-weight: 700; }
+      .code-dim  { fill: #888888; font-family: 'Courier New', Courier, monospace; font-size: 13px; }
+
+      .bad-line-bg { fill: #e673ac; fill-opacity: 0.12; }
+    </style>
+    <marker id="arr-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e673ac"/>
+    </marker>
+  </defs>
+
+  <!-- Background + stripes -->
+  <g>
+    <rect class="bg-main" x="0" y="0" width="1200" height="630"/>
+    <rect class="stripe1" x="0" y="0" width="150" height="630"/>
+    <rect class="stripe2" x="149.15" y="0" width="150" height="630"/>
+    <rect class="stripe3" x="299.15" y="0" width="150" height="630"/>
+    <rect class="stripe4" x="449.15" y="0" width="150" height="630"/>
+    <rect class="stripe5" x="599.15" y="0" width="150" height="630"/>
+  </g>
+
+  <!-- LEFT: tagline, headline, subhead -->
+  <text class="tagline" transform="translate(72.53 71.11)"><tspan x="0" y="0">COMPLIANCE / FRAMER</tspan></text>
+  <text class="headline" transform="translate(72.53 178.65)"><tspan class="hl-white"><tspan x="0" y="0">Cookie banner</tspan></tspan><tspan class="hl-white"><tspan x="0" y="72">looks compliant.</tspan></tspan><tspan class="hl-teal"><tspan x="0" y="144">It isn't.</tspan></tspan></text>
+  <text class="sub" transform="translate(72.53 519)"><tspan x="0" y="0">Two signals contradict the banner UI.</tspan><tspan x="0" y="42">Fix them in GTM before anything fires.</tspan></text>
+
+  <!-- RIGHT: banner mockup (top) + code snippet (bottom) -->
+  <g>
+    <!-- Banner mockup card -->
+    <rect class="banner-card" x="770" y="95" width="385" height="190" rx="10" ry="10"/>
+    <text class="banner-title" transform="translate(790 122)"><tspan x="0" y="0">Cookies on yoursite.com</tspan></text>
+    <text class="banner-body"  transform="translate(790 143)"><tspan x="0" y="0">We use cookies to improve your experience.</tspan></text>
+
+    <!-- Categories row -->
+    <text class="cat-label" transform="translate(790 175)"><tspan x="0" y="0">Necessary</tspan></text>
+    <text class="cat-always" transform="translate(875 175)"><tspan x="0" y="0">ALWAYS ACTIVE</tspan></text>
+
+    <text class="cat-label" transform="translate(790 198)"><tspan x="0" y="0">Analytics</tspan></text>
+    <rect x="875" y="188" width="28" height="14" rx="7" ry="7" fill="#1a2a2d"/>
+    <circle cx="882" cy="195" r="5" fill="#888"/>
+
+    <text class="cat-label" transform="translate(940 198)"><tspan x="0" y="0">Marketing</tspan></text>
+    <rect x="1030" y="188" width="28" height="14" rx="7" ry="7" fill="#1a2a2d"/>
+    <circle cx="1037" cy="195" r="5" fill="#888"/>
+
+    <!-- Buttons -->
+    <rect class="btn-reject-fill" x="790" y="228" width="130" height="36" rx="6" ry="6"/>
+    <text class="btn-label-white" text-anchor="middle" x="855" y="251"><tspan x="855" y="251">Reject all</tspan></text>
+
+    <rect class="btn-accept-fill" x="935" y="228" width="200" height="36" rx="6" ry="6"/>
+    <text class="btn-label-dark"  text-anchor="middle" x="1035" y="251"><tspan x="1035" y="251">Accept all</tspan></text>
+
+    <!-- Pink warning arrow from banner to first bad line -->
+    <path d="M860 268 C 860 320, 770 360, 795 408" stroke="#e673ac" stroke-width="2.5" fill="none" stroke-linecap="round"/><polygon points="785.9,401.4 795.0,408.0 794.8,396.8" fill="#e673ac"/>
+
+    <!-- Code snippet card -->
+    <rect class="code-card" x="770" y="330" width="385" height="163" rx="10" ry="10"/>
+    <rect class="code-header-bar" x="770" y="330" width="385" height="28" rx="10" ry="10"/>
+    <rect class="code-header-bar" x="770" y="348" width="385" height="10"/>
+    <circle class="code-dot-red"    cx="788" cy="344" r="5"/>
+    <circle class="code-dot-yellow" cx="805" cy="344" r="5"/>
+    <circle class="code-dot-green"  cx="822" cy="344" r="5"/>
+    <text class="code-filename" text-anchor="middle" x="960" y="348"><tspan x="960" y="348">gtag-consent-default.js</tspan></text>
+
+    <!-- Highlight the two offending denied lines -->
+    <rect class="bad-line-bg" x="776" y="397" width="373" height="17"/>
+    <rect class="bad-line-bg" x="776" y="431" width="373" height="17"/>
+
+    <text class="code-txt" transform="translate(785 375)"><tspan x="0" y="0">gtag(</tspan><tspan class="code-bad" style="fill:#0096a6">'consent'</tspan><tspan>, </tspan><tspan class="code-bad" style="fill:#0096a6">'default'</tspan><tspan>, {</tspan></text>
+    <text class="code-key" transform="translate(805 392)"><tspan x="0" y="0">functionality_storage</tspan><tspan class="code-dim" style="fill:#faf7f5">:</tspan></text>
+    <text class="code-key" transform="translate(825 409)"><tspan class="code-bad" style="fill:#e673ac"><tspan x="0" y="0">'denied'</tspan></tspan><tspan class="code-dim" style="fill:#faf7f5">,</tspan></text>
+    <text class="code-key" transform="translate(805 426)"><tspan x="0" y="0">security_storage</tspan><tspan class="code-dim" style="fill:#faf7f5">:</tspan></text>
+    <text class="code-key" transform="translate(825 443)"><tspan class="code-bad" style="fill:#e673ac"><tspan x="0" y="0">'denied'</tspan></tspan><tspan class="code-dim" style="fill:#faf7f5">,</tspan></text>
+    <text class="code-dim" transform="translate(805 460)"><tspan x="0" y="0">...</tspan></text>
+    <text class="code-txt" transform="translate(785 477)"><tspan x="0" y="0">});</tspan></text>
+  </g>
+</svg>
